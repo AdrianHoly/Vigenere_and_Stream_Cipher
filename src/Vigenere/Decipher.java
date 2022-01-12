@@ -1,9 +1,10 @@
 package Vigenere;
 
 public class Decipher {
-    private StringBuilder text_decipher = new StringBuilder();
+    private StringBuilder text_decipher;
     public Decipher(StringBuilder input, String key) {
         decode(input,key);
+        text_decipher = new StringBuilder();
 
     }
 
